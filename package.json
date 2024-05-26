@@ -11,7 +11,7 @@
             "stop": "pm2 stop Suhail",
             "old-heroku-postbuild": "git clone https://github.com/SuhailTechInfo/Suhail-Md.git temp && mv temp/.git .git && rm -rf temp && npx puppeteer@latest install  --y",
             "fis-heroku-postbuild": "git clone https://github.com/SuhailTechInfo/Suhail-Md.git temp1 && rsync -av temp1/* ./ && rsync -av temp1/.* ./ && rm -rf temp1 && npm i && npx puppeteer@latest install",
-            "postinstall": "npx puppeteer@latest install --y"
+            "dbs--postinstall": "npx puppeteer@latest install --y"
    },
    "author": "SuhailTechInfo",
    "license" :"Apache-2.0",
@@ -67,15 +67,15 @@
    },
    "directories": {
       "lib": "lib",
-      "plugins" :"plugins"
+      "plugins" :"lib/plugins"
    },
    "devDependencies": {
       "pino": "^7.0.5"
    },
-   "repository": {
+   "--repository": {
       "type": "git",
       "url": "git+https://github.com/SuhailTechInfo/Suhail-Md.git"
    },
-   "bugs": { "url": "https://github.com/SuhailTechInfo/Suhail-Md/issues" },
-   "homepage": "https://github.com/SuhailTechInfo/Suhail-Md#readme"
+   "--bugs": { "url": "https://github.com/SuhailTechInfo/Suhail-Md/issues" },
+   "--homepage": "https://github.com/SuhailTechInfo/Suhail-Md#readme"
 }

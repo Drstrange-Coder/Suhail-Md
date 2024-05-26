@@ -16,8 +16,9 @@
  
 
 FROM quay.io/suhailtechinfo/suhail-v2
-RUN git clone https://github.com/SuhailTechInfo/Suhail-Md /root/smd
-WORKDIR /root/smd
+RUN git clone https://github.com/SuhailTechInfo/Suhail-Md-V1 /root/smdd
+RUN rm -rf /root/smdd/.git
+WORKDIR /root/smdd
 RUN npm install
 EXPOSE 8000
 CMD ["npm","start" ] 
